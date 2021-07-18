@@ -1,72 +1,35 @@
 @import url('https://fonts.googleleapis.com/css?family=open+sans!poppins:400,700&display=swap');
-
-.{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+main{
 	display: flex;
+	justify-content: center;
+	margin: 40px;
 }
 
 body{
-	font-family: 'open sans', sans-serif;
+	background-image: url(bg-desktop.svg);
 	background-color: hsl(257, 40%, 49%);
-	/*overflow: hidden;*/
+	color: #fff;
+	font-family: 'open sans', sans-serif;
 }
 
-h1 p{
-	font-family: 'poppins', sans-serif;
-}
-
-.background img{
-	height: 100vh;
-	position: absolute;
-}
-
-.logo{
-	position: absolute;
-	top: 32%
-	left: 5%;
+button{
+	width: 150px;
+    padding: 1em;
+    height: 40px;
+    border-radius: 20px;
+    color: hsl(257, 40%, 49%);
+    outline: none;
+    border: none;
 }
 
 .illustration-mockups{
-	position: absolute;
-	top: 24%;
-    left: 5%;
-    width: 50%;
-    height: 60%;
+	width: 100%;
 }
 
 .text{
-	position: absolute;
-	top: 30%;
-    right: 5%;
-    width: 32%;
-    height: auto;
-    color: #fff;
-}
-
-.text h1{
-	font-weight: 700;
-	font-size: 40px;
-	padding: 0 0 35px 0;
-}
-
-
-.text button{
-	width: 200px;
-	height: 50px;
-	border: none;
-	outline: none;
-	background-color: #fff;
-	color: hsl(257, 40%, 49%);
-	text-align: center;
-	border-radius: 50px;
-	margin-top: 35px;
-	font-size: 16px;
-}
-
-.text button:hover{
-	opacity: 0.9;
+	max-width: 400px;
+	margin: 20px;
+	font-family: 'poppins', sans-serif;
 }
 
 .social_handles{
@@ -76,49 +39,30 @@ h1 p{
 }
 
 
+@media(max-width: 768px){
+	main{
+		flex-direction: column;
+	}
 
-@media and screen(max-width: 800px){
-  .background img{
-	height: 100vh;
-	display: flex;
+	body{
+		background-image: url(bg-mobile.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.illustration-mockups{
+	width: 10%;
+    }
+
+	.text{
+		margin: 0;
+		width: 100%;
+	}
+
+	.social_handles{
+	position: fixed;
+    bottom: 25%;
+    left: 5%;
+    align-items: center;
+    }
 }
-
-.text{
-	position: absolute;
-	top: 50%;
-    right: 0%;
-    left: 95%;
-    width: 32%;
-    height: auto;
-    color: #fff;
-}
-
-.text h1{
-	font-weight: 700;
-	font-size: 40px;
-	padding: 0 0 35px 0;
-}
-
-
-.text button{
-	width: 200px;
-	height: 50px;
-	border: none;
-	outline: none;
-	background-color: #fff;
-	color: hsl(257, 40%, 49%);
-	text-align: center;
-	border-radius: 50px;
-	margin-top: 35px;
-	font-size: 16px;
-}
-
-.social_handles{
-	position: absolute;
-    bottom: 3%;
-    left: 1%;
-}
-
-
-
-
