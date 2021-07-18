@@ -60,9 +60,6 @@ button{
 	}
 
 	.social_handles{
-	position: fixed;
-    bottom: 25%;
-    left: 5%;
-    align-items: center;
+	display: none;
     }
 }
